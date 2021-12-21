@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oleksiy Onyshchenko - Personal Site</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div id="page-content" class="page-content">
+        <main id="main">
+          <section id="left-panel" class="panel-wrapper">
+            <div class="panel-content">
+              <div class="panel-border">
+                <div class="panel-top">
+                  <span
+                    id="top-current-folder-path"
+                    class="current-folder-path"
+                  ></span>
+                </div>
+                <div class="panel-main">
+                  <div class="file-name right-border"></div>
+                  <div class="file-size right-border"></div>
+                  <div class="file-date"></div>
+                  <div class="file-labels">
+                    <span class="file-name">Name</span>
+                    <span class="file-size">Size</span
+                    ><span class="file-date">Date</span>
+                  </div>
+                  <div id="file-list" class="file-list"></div>
+                </div>
+                <div class="panel-bottom">
+                  <span class="copyright"
+                    >Oleksiy Onyshchenko. v.0.1. 1986-<span
+                      id="current-year"
+                    ></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="right-panel" class="panel-wrapper">
+            <div class="panel-content">
+              <div class="panel-border">
+                <div class="panel-top">
+                  <span id="quick-view" class="quick-view">Quick View</span>
+                </div>
+                <div class="panel-main">
+                  <div
+                    id="right-panel-content"
+                    class="right-panel-content"
+                  ></div>
+                </div>
+                <div class="panel-bottom">
+                  <span
+                    id="selected-file-name"
+                    class="selected-file-name"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer id="footer">
+          <div id="bottom-current-folder-path" class="command-line"></div>
+          <div id="user-menu-btns">
+            <ul class="user-menu-btns">
+              <li id="help-page-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id" style="padding-left: 0">1</span
+                ><span class="user-menu-btn-label">Help</span>
+              </li>
+              <li id="user-mn-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">2</span
+                ><span class="user-menu-btn-label">UserMn</span>
+              </li>
+              <li id="view-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">3</span
+                ><span class="user-menu-btn-label">View</span>
+              </li>
+              <li id="tree-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">4</span
+                ><span class="user-menu-btn-label">Tree</span>
+              </li>
+              <li id="copy-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">5</span
+                ><span class="user-menu-btn-label">Copy</span>
+              </li>
+              <li id="swap-panels-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">6</span
+                ><span class="user-menu-btn-label">SwapPanels</span>
+              </li>
+              <li id="black-n-white-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">7</span
+                ><span class="user-menu-btn-label">Black&Wht</span>
+              </li>
+              <li id="delete-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">8</span
+                ><span class="user-menu-btn-label">Delete</span>
+              </li>
+              <li id="conf-mn-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">9</span
+                ><span class="user-menu-btn-label">ConfMn</span>
+              </li>
+              <li id="quit-btn" class="user-menu-btn">
+                <span class="user-menu-btn-id">10</span
+                ><span class="user-menu-btn-label">Quit</span>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script type="text/javascript" src="app/static-data.js"></script>
+    <script type="text/javascript" src="app/user-menu.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+    <script type="text/javascript" src="app/tic-tac-toe-games.js"></script>
+  </body>
+</html>
